@@ -1,4 +1,4 @@
-
+import { Homepage } from './homepage.component'
 import "./App.css";
 
 function App() {
