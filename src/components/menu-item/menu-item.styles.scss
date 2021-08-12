@@ -11,6 +11,10 @@
     background-size: cover;
     margin: 0 7.5px 15px;
     color: white;
+
+    &.large{
+      height: 380px;
+    }
   
     &:first-child {
       margin-right: 7.5px;
