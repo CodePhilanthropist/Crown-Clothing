@@ -1,6 +1,6 @@
-import Homepage from './pages/homepage/homepage.component'
+import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
-import { Route } from 'react-router-dom';
+import { Route, Switch } from "react-router-dom";
 
 const HatsPage = () => (
   <div>
@@ -9,9 +9,13 @@ const HatsPage = () => (
 );
 
 function App() {
-  return <div className="App">
-    <Route exact path="/" component={Homepage}/>
-  </div>;
+  return (
+    <div className="App">
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+      </Switch>
+    </div>
+  );
 }
 
 export default App;
