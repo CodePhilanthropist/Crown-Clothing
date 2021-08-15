@@ -1,24 +1,26 @@
 import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
-const HatsPage = () => (
+const HatsPage = (props) => (
   <div>
     <h1>Hats Page</h1>
+    <button onClick={() => props.history.push('/tongkoy')}>Click me</button>
   </div>
 );
 
 const Tongkoy = () => (
   <div>
-  <h1>tongkoy Page</h1>
-</div>
+  <Link to="/tongkoy">Topics</Link>
+    <h1>tongkoy Page</h1>
+  </div>
 );
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" />omponent={Homepage} />
+        <Route exact path="/" component={Homepage} />
         <Route exact path="/hat" component={HatsPage} />
         <Route exact path="/tongkoy" component={Tongkoy} />
       </Switch>
