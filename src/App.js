@@ -8,12 +8,19 @@ const HatsPage = () => (
   </div>
 );
 
+const Tongkoy = () => (
+  <div>
+  <h1>tongkoy Page</h1>
+</div>
+);
+
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" c/>omponent={Homepage} />
+        <Route exact path="/" />omponent={Homepage} />
         <Route exact path="/hat" component={HatsPage} />
+        <Route exact path="/tongkoy" component={Tongkoy} />
       </Switch>
     </div>
   );
