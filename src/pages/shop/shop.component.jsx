@@ -4,7 +4,7 @@ export default class Shop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      SHOP_DATA: [
+      collections: [
         {
           id: 1,
           title: "Hats",
