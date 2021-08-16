@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {shopData} from "./shop.data";
+import shopData from "./shop.data";
 export default class Shop extends Component {
   constructor(props) {
     super(props);
