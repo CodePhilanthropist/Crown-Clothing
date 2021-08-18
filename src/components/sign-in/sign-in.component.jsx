@@ -9,9 +9,10 @@ export class SignIn extends Component {
         }
     }
 
-    handleSubmit = () => (
-
-    );
+    handleSubmit = (event) => {
+        event.preventDefault();
+        setState({email: "", password: ""});
+    };
 
     render() {
         return (
