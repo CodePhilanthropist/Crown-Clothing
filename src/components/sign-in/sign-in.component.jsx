@@ -18,6 +18,8 @@ export class SignIn extends Component {
                     <label htmlFor="email">Email</label>
                     <input type="password" className="password" name="password" value={this.state.password} required/>
                     <label htmlFor="password">Password</label>
+
+                    <input type="submit" value="Submit" />
                     
                 </form>
             </div>
