@@ -10,8 +10,8 @@ export const Header = () => {
                 <Logo className="logo"/>
             </Link>
             <div className="options">
-                <div className="option" to="/shop">Shop</div>
-                <div className="option" to="/shop">Contact</div>
+                <Link className="option" to="/shop">Shop</Link>
+                <Link className="option" to="/shop">Contact</Link>
             </div>
         </div>
     )
