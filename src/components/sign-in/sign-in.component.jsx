@@ -16,6 +16,7 @@ export class SignIn extends Component {
 
     handleChange = event => {
         const {value, name} = event.target;
+        this.setState({[name]: value})
     };
 
     render() {
@@ -29,7 +30,7 @@ export class SignIn extends Component {
                     <input type="password" className="password" name="password" value={this.state.password} required/>
                     <label htmlFor="password">Password</label>
 
-                    <input type="submit" value="Submit" onChange={}/>
+                    <input type="submit" value="Submit" onChange={this.handleChange}/>
                     
                 </form>
             </div>
