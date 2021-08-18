@@ -10,8 +10,9 @@ export class SignIn extends Component {
     }
     render() {
         return (
-            <div>
-                
+            <div className="sign-in">
+                <h2>I already have an acount</h2>
+                <span>Sign in with your email and password</span>
             </div>
         )
     }
