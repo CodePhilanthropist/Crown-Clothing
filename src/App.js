@@ -14,6 +14,7 @@ const HatsPage = (props) => (
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/hat" component={HatsPage} />
