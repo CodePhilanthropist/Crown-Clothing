@@ -9,13 +9,6 @@ const HatsPage = (props) => (
   </div>
 );
 
-const Tongkoy = () => (
-  <div>
-  <Link to="/tongkoy">Topics</Link>
-    <h1>tongkoy Page</h1>
-  </div>
-);
-
 function App() {
   return (
     <div className="App">
