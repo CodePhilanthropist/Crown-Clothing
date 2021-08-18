@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Shop from "./pages/shop/shop.component";
 import { Header } from "./components/header/header.component";
+import { SignInAndOut } from "./pages/sign-in-sign-out/sign-in-and-out.component";
 
 const HatsPage = (props) => (
   <div>
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route exact path="/hat" component={HatsPage} />
         <Route exact path="/shop" component={Shop} />
+        <Route exact path="/SignIn" component={SignInAndOut} />
       </Switch>
     </div>
   );
