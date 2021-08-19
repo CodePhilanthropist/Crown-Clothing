@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { FormInput } from '../form-input/form-input.component';
 
 export class SignIn extends Component {
     constructor(props){
