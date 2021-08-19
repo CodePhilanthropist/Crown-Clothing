@@ -27,9 +27,7 @@ export class SignIn extends Component {
                 <span>Sign in with your email and password</span>
                 <form action="" onSubmit={this.handleSubmit}>
                     <FormInput type="text" name="email" value={this.state.email} handleChange={this.handleChange} label="email" required/>
-                    <label>Email</label>
                     <FormInput type="password" name="password" value={this.state.password} handleChange={this.handleChange} label="password" required/>
-                    <label>Password</label>
 
                     <input type="submit" value="Submit" onChange={this.handleChange}/>
                     
