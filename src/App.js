@@ -5,7 +5,7 @@ import Shop from "./pages/shop/shop.component";
 import { Header } from "./components/header/header.component";
 import { SignInAndOut } from "./pages/sign-in-sign-out/sign-in-and-out.component";
 import { auth } from "./firebase/firebase.utils";
-import { Component } from "react";
+import React from "react";
 
 const HatsPage = (props) => (
   <div>
@@ -14,10 +14,14 @@ const HatsPage = (props) => (
   </div>
 );
 
-class App extends Component() {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  componentDidMount(){
+    
   }
 
   render() {
