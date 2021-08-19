@@ -9,6 +9,13 @@ export const FormInput = ({ handleChange, label, ...otherProps }) => {
         onChange={handleChange}
         {...otherProps}
       />
+      {
+          label?
+          <label className={`${props.value.length}`}>
+
+          </label>
+          : null
+      }
     </div>
   );
 };
