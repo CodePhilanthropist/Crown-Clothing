@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const FormInput = () => {
+export const FormInput = ({handleChange, label, ...otherProps}) => {
     return (
         <div>
             
