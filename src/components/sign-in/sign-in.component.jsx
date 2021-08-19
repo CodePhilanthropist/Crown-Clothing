@@ -26,10 +26,10 @@ export class SignIn extends Component {
                 <h2>I already have an acount</h2>
                 <span>Sign in with your email and password</span>
                 <form action="" onSubmit={this.handleSubmit}>
-                    <input type="text" className="email" name="email" value={this.state.email} required/>
-                    <label htmlFor="email">Email</label>
-                    <input type="password" className="password" name="password" value={this.state.password} required/>
-                    <label htmlFor="password">Password</label>
+                    <FormInput type="text" name="email" value={this.state.email} handleChange={this.handleChange} required/>
+                    <label>Email</label>
+                    <FormInput type="password" name="password" value={this.state.password} handleChange={this.handleChange} required/>
+                    <label>Password</label>
 
                     <input type="submit" value="Submit" onChange={this.handleChange}/>
                     
