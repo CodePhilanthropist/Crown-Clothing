@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-export const FormInput = ({handleChange, label, ...otherProps}) => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+export const FormInput = ({ handleChange, label, ...otherProps }) => {
+  return (
+    <div className="group">
+      <input
+        type="text"
+        className="form-input"
+        onChange={handleChange}
+        {...otherProps}
+      />
+    </div>
+  );
+};
