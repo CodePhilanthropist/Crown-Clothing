@@ -25,4 +25,4 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GithubAuthProvider();
-provider.setCustomParameters({promopt: 'select_account'});
+provider.setCustomParameters({prompt: 'select_account'});
