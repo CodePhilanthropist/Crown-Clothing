@@ -26,3 +26,6 @@ export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GithubAuthProvider();
 provider.setCustomParameters({prompt: 'select_account'});
+export const signInWithGoogle = () => auth.signInWithPopUp(provider);
+
+export default firebase;
