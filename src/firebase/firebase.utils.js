@@ -22,7 +22,7 @@ const config = {
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
-    console.log(firestore.collection('rian'));
+    console.log(firestore.doc('rian'));
 
 };
 
