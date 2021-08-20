@@ -18,7 +18,7 @@ export const Header = ({ currentUser }) => {
           Contact
         </Link>
         <Link className="option" to="/shop">
-          {currentUser ? <div className="option" onClick={()=>auth.signOut()}>SIGN OUT</div> : <Link to="/"></Link>}
+          {currentUser ? <div className="option" onClick={()=>auth.signOut()}>SIGN OUT</div> : <Link className="option" to="/"></Link>}
         </Link>
       </div>
     </div>
