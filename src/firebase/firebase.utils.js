@@ -31,6 +31,12 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         const createdAt = new Date();
     }
 
+    try{
+
+    }catch(error){
+        
+    }
+
 };
 
 firebase.initializeApp(config);
