@@ -18,7 +18,7 @@ export const Header = ({ currentUser }) => {
           Contact
         </Link>
         <Link className="option" to="/shop">
-          {currentUser ? <div></div> : <Link></Link>}
+          {currentUser ? <div className="option"></div> : <Link></Link>}
         </Link>
       </div>
     </div>
