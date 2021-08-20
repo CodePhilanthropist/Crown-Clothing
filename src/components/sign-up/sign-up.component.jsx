@@ -16,8 +16,12 @@ class SignUp extends React.Component{
     }
 
     render(){
-        return {
-
-        }
+        return (
+            <div className="sign-up">
+                <h2 className="title">
+                    
+                </h2>
+            </div>
+        )
     }
 }
