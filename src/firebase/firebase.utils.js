@@ -21,7 +21,7 @@ const config = {
   };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
-    if (userAuth){
+    if (!userAuth){
         
     }
 }
