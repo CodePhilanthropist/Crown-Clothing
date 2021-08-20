@@ -13,7 +13,7 @@ export const Header = ({currentUser}) => {
             <div className="options">
                 <Link className="option" to="/shop">Shop</Link>
                 <Link className="option" to="/shop">Contact</Link>
-                <Link className="option" to="/shop">Contact</Link>
+                <Link className="option" to="/shop">{currentUser}</Link>
             </div>
         </div>
     )
