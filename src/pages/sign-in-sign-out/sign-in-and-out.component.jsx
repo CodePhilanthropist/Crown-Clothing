@@ -6,6 +6,7 @@ export const SignInAndOut = () => {
     return (
         <div>
             <SignIn/>
+            <SignUp/>
         </div>
     )
 }
