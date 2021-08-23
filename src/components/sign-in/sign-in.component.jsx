@@ -13,8 +13,9 @@ export class SignIn extends Component {
         }
     }
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
         event.preventDefault();
+        const {email, password} = this.state;
         this.setState({email: "", password: ""});
     };
 
