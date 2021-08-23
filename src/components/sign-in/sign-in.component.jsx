@@ -19,11 +19,12 @@ export class SignIn extends Component {
 
         try{
             await auth.signInWithEmailAndPassword(email, password);
+            this.setState({email: "", password: ""});
         }catch(error){
-            
+
         }
 
-        this.setState({email: "", password: ""});
+       
     };
 
     handleChange = event => {
