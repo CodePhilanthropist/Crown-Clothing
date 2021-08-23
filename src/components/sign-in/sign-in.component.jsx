@@ -19,7 +19,9 @@ export class SignIn extends Component {
 
         try{
             await auth.signInWithEmailAndPassword(email, password);
-        }catch()
+        }catch(error){
+            
+        }
 
         this.setState({email: "", password: ""});
     };
