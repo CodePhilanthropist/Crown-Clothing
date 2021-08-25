@@ -27,4 +27,4 @@ const Header = ({ currentUser }) => {
   );
 };
 
-export default Header;
+export default connect()(Header);
