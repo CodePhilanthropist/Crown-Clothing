@@ -27,6 +27,8 @@ const Header = ({ currentUser }) => {
   );
 };
 
-const mapStateToProps = () =>();
+const mapStateToProps = () =>({
+  
+});
 
 export default connect()(Header);
