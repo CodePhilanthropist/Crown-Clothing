@@ -59,7 +59,7 @@ class App extends React.Component {
   }
 }
 
-const mapDispatchToProps = () => ({
+const mapDispatchToProps = (dispatch) => ({
 
 });
 
