@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import {addItem} from "../../redux/cart/cart.actions";
 
 
-export const CollectionItem = ({id, name, price, imageUrl}) => {
+const CollectionItem = ({id, name, price, imageUrl}) => {
     return (
         <div className="collection-item">
             <div className="image" style={{
@@ -20,3 +20,6 @@ export const CollectionItem = ({id, name, price, imageUrl}) => {
         </div>
     )
 }
+
+
+export default CollectionItem;
