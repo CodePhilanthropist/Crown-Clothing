@@ -4,7 +4,7 @@ import "./cart-dropdown.styles.scss";
 
 const CartDropdpwn = () => {
     return (
-        <div>
+        <div className="cart-dropdown">
             
         </div>
     )
