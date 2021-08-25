@@ -10,4 +10,6 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
         : cartItem
     );
   }
+
+  return []
 };
