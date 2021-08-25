@@ -2,8 +2,8 @@ import React from 'react';
 import "./cart-icon.styles.scss";
 import {ReactComponent as ShoppingIcon} from "../../assets/shopping-bag.svg";
 
-import {cnnect} from "react-redux";
-
+import {connect} from "react-redux";
+import {} from "../../redux/cart/cart.actions";
 const CartIcon = () => {
     return (
         <div className="cart-icon">
