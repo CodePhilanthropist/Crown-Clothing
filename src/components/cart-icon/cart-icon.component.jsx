@@ -13,4 +13,8 @@ const CartIcon = () => {
     )
 }
 
+const mapDispatchToProps = dispatch => ({
+    
+});
+
 export default CartIcon;
