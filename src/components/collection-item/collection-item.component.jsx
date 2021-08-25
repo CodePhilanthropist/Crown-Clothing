@@ -21,8 +21,8 @@ const CollectionItem = ({id, name, price, imageUrl}) => {
     )
 }
 
-const mapDispatchToProps = ({}) => ({
-
+const mapDispatchToProps = (dispatch) => ({
+    addItem: item => dispatch(addItem(item)),
 });
 
 export default connect(null, mapDispatchToProps)(CollectionItem);
