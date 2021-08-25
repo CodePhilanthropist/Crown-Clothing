@@ -7,6 +7,7 @@ import { SignInAndOut } from "./pages/sign-in-sign-out/sign-in-and-out.component
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import React from "react";
 
+import {connect} from "react-redux";
 
 class App extends React.Component {
   constructor(props) {
