@@ -1,6 +1,6 @@
 import Homepage from "./pages/homepage/homepage.component";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Shop from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
 import { SignInAndOut } from "./pages/sign-in-sign-out/sign-in-and-out.component";
