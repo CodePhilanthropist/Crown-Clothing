@@ -21,7 +21,7 @@ class App extends React.Component {
         const userRef = await createUserProfileDocument(userAuth);
 
         userRef.onSnapshot((snapShot) => {
-          this.props.setCurrentUser({
+          setCurrentUser({
             currentUser: {
               id: snapShot.id,
               ...snapShot.data(),
