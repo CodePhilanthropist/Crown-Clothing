@@ -1,3 +1,5 @@
+import "./user.types";
+
 const INITIAL_STATE = {
     currentUser: null,
 };
