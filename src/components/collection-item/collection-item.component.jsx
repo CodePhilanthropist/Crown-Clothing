@@ -21,5 +21,8 @@ const CollectionItem = ({id, name, price, imageUrl}) => {
     )
 }
 
+const mapDispatchToProps = ({}) => ({
+    
+});
 
 export default CollectionItem;
