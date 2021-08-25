@@ -59,4 +59,8 @@ class App extends React.Component {
   }
 }
 
+const mapDispatchToProps = () => ({
+  
+});
+
 export default connect()(App);
