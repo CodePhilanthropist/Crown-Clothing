@@ -46,7 +46,6 @@ class App extends React.Component {
   }
 
   render() {
-    const { currentUser } = this.state;
     return (
       <div className="App">
         <Header/>
@@ -61,7 +60,7 @@ class App extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-
+  setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
 export default connect(null, mapDispatchToProps)(App);
