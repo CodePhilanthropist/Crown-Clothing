@@ -27,6 +27,7 @@ const Header = ({ currentUser }) => {
         </Link>
         <CartIcon/>
       </div>
+      <CartDropdown></CartDropdown>
     </div>
   );
 };
