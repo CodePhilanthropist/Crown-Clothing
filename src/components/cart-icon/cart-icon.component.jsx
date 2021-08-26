@@ -19,7 +19,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = ({cart: {cartItems}}) = ({
-    itemCount: cartItems.reduce((accumalatedQuantity), 0)
+    itemCount: cartItems.reduce((accumalatedQuantity, cartItem), 0)
 });
 
 export default connect(null, mapDispatchToProps)(CartIcon);
