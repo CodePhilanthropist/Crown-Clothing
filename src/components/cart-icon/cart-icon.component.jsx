@@ -23,3 +23,4 @@ const mapStateToProps = ({cart: {cartItems}}) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);
+    
