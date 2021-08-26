@@ -9,7 +9,7 @@ const CartDropdown = ({cartItems}) => {
         <div className="cart-dropdown">
             <div className="cart-items">
                 {
-                    cartItems.map()
+                    cartItems.map(cartItem => <CartItem/>)
                 }
                 <CustomButton>Go to Checkout</CustomButton>
             </div>
