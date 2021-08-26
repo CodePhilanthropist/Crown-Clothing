@@ -18,7 +18,7 @@ const mapDispatchToProps = dispatch => ({
     toggleCartHidden: () => dispatch(toggleCartHidden())
 });
 
-const mapStateToProps = ({cart: {cartItems}}) = ({
+const mapStateToProps = ({cart: {cartItems}}) => ({
     itemCount: cartItems.reduce((accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity, 0)
 });
 
