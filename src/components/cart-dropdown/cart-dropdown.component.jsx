@@ -4,7 +4,7 @@ import "./cart-dropdown.styles.scss";
 import CartItem from '../cart-item/cart-item.component';
 import {connect} from "react-redux";
 
-const CartDropdown = ({CartItem}) => {
+const CartDropdown = ({cartItems}) => {
     return (
         <div className="cart-dropdown">
             <div className="cart-items">
