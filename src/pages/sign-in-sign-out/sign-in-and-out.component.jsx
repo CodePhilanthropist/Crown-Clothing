@@ -10,4 +10,5 @@ const SignInAndOut = () => {
         </div>
     )
 }
-    
+
+export default SignInAndOut;
