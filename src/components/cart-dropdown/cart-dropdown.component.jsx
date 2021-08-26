@@ -14,8 +14,8 @@ const CartDropdown = () => {
     )
 }
 
-const mapStateToProps = state => ({
-    
-})
+const mapStateToProps = ({cart: {cartItems}}) => ({
+    cartItems
+});
 
 export default CartDropdown;
