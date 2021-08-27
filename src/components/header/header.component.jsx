@@ -40,7 +40,7 @@ const Header = ({ currentUser, hidden }) => (
 );
 
 const mapStateToProps = (state) => ({
-  currentUser,
+  currentUser: selectCurrentUser,
   hidden
 });
 
