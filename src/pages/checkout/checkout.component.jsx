@@ -11,6 +11,9 @@ const CheckoutPage = () => {
                 <div className="header-block">
                     <span></span>
                 </div>
+                <div className="header-block">
+                    <span></span>
+                </div>
             </div>
         </div>
     )
