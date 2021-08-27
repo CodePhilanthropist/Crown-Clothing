@@ -4,6 +4,8 @@ import "./checkout.styles.scss";
 import {connect} from "react-redux";
 import { createStructuredSelector } from 'reselect';
 
+import {selectCartItems} from "../../redux/cart/cart.selectors";
+
 const CheckoutPage = () => {
     return (
         <div className="checkout-page">
