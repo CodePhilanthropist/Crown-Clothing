@@ -12,7 +12,7 @@ const CheckoutPage = () => {
                     <span>Description</span>
                 </div>
                 <div className="header-block">
-                    <span></span>
+                    <span>Quantity</span>
                 </div>
                 <div className="header-block">
                     <span></span>
