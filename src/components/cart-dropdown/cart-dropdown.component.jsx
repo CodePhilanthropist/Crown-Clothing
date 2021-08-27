@@ -10,11 +10,17 @@ const CartDropdown = ({ cartItems }) => {
   return (
     <div className="cart-dropdown">
       <div className="cart-items">
-        {cartItems.map((cartItem) => (
+        {
+          cartItem.length ?
+        cartItems.map((cartItem) => (
           <CartItem key={CartItem.id} item={cartItem} />
-        ))}
-        <CustomButton>Go to Checkout</CustomButton>
+        ))
+        :
+          
+        }
+        
       </div>
+      <CustomButton>Go to Checkout</CustomButton>
     </div>
   );
 };
