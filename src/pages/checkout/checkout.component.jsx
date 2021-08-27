@@ -3,7 +3,7 @@ import "./checkout.styles.scss";
 
 const CheckoutPage = () => {
     return (
-        <div>
+        <div className="checkout-page">
             Checkout Page
         </div>
     )
