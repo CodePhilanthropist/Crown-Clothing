@@ -6,7 +6,7 @@ const CheckoutPage = () => {
         <div className="checkout-page">
             <div className="checkout-header">
                 <div className="header-block">
-                    <span></span>
+                    <span>Product</span>
                 </div>
                 <div className="header-block">
                     <span></span>
