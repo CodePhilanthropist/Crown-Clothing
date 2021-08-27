@@ -4,7 +4,9 @@ import "./checkout.styles.scss";
 const CheckoutPage = () => {
     return (
         <div className="checkout-page">
-            Checkout Page
+            <div className="checkout-header">
+                
+            </div>
         </div>
     )
 }
