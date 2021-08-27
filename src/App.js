@@ -10,7 +10,7 @@ import SignInAndOut from "./pages/sign-in-sign-out/sign-in-and-out.component";
 import Header from "./components/header/header.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
-import {selectCurrentUser} from "./redux/user/user-selector";
+import { selectCurrentUser } from "./redux/user/user-selector";
 import { createStructuredSelector } from "reselect";
 
 class App extends React.Component {
@@ -50,11 +50,7 @@ class App extends React.Component {
             exact
             path="/signin"
             render={() =>
-              this.props.currentUser ? (
-                <Redirect to="/" />
-              ) : (
-                <SignInAndOut />
-              )
+              this.props.currentUser ? <Redirect to="/" /> : <SignInAndOut />
             }
           />
         </Switch>
