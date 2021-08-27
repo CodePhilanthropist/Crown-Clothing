@@ -8,9 +8,9 @@ const CheckoutItem = () => {
         <img src="" alt="item" />
       </div>
       <span className="name"></span>
-      <span className="name"></span>
-      <span className="name"></span>
-      <span className="name"></span>
+      <span className="quantity"></span>
+      <span className="price"></span>
+      <div className="remove-button"></div>
     </div>
   );
 };
