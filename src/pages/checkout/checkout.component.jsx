@@ -30,4 +30,8 @@ const CheckoutPage = () => {
     )
 }
 
+const mapStateToProps = createStructuredSelector({
+    
+})
+
 export default CheckoutPage;
