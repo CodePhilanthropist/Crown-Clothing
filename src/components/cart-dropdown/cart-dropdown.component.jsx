@@ -16,7 +16,9 @@ const CartDropdown = ({ cartItems }) => {
           <CartItem key={CartItem.id} item={cartItem} />
         ))
         :
-          
+          <span className="empty-message">
+            
+          </span>
         }
         
       </div>
