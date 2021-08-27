@@ -7,6 +7,9 @@ const CheckoutItem = () => {
             <div className="image-container">
                 <img src="" alt="item" />
             </div>
+            <span className="name">
+                
+            </span>
         </div>
     )
 }
