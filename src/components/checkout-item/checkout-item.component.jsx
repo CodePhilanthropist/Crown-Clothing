@@ -5,7 +5,7 @@ const CheckoutItem = ({cartItem: {name, imageUrl, price, quantity}}) => {
   return (
     <div className="checkout-item">
       <div className="image-container">
-        <img src="" alt="item" />
+        <img src={imageUrl} alt="item" />
       </div>
       <span className="name"></span>
       <span className="quantity"></span>
