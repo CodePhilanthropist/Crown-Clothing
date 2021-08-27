@@ -10,7 +10,7 @@ const CheckoutItem = () => {
       <span className="name"></span>
       <span className="quantity"></span>
       <span className="price"></span>
-      <div className="remove-button"></div>
+      <div className="remove-button">&#1005</div>
     </div>
   );
 };
