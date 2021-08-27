@@ -40,7 +40,7 @@ const Header = ({ currentUser, hidden }) => (
 );
 
 const mapStateToProps = (state) => ({
-  currentUser: selectCurrentUser,
+  currentUser: selectCurrentUser(state),
   hidden: selectCartHidden(state)
 });
 
