@@ -41,7 +41,7 @@ const Header = ({ currentUser, hidden }) => (
 
 const mapStateToProps = (state) => ({
   currentUser: selectCurrentUser,
-  hidden
+  hidden: selectCartHidden(state)
 });
 
 export default connect(mapStateToProps)(Header);
