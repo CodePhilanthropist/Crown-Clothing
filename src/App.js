@@ -50,7 +50,7 @@ class App extends React.Component {
           <Route exact="/checkout" component={CheckoutPage} />
           <Route
             exact
-            path="/signin"
+            path="/sign-in"
             render={() =>
               this.props.currentUser ? <Redirect to="/" /> : <SignInAndOut />
             }
