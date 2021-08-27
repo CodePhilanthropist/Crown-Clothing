@@ -15,7 +15,7 @@ const CheckoutPage = () => {
                     <span>Quantity</span>
                 </div>
                 <div className="header-block">
-                    <span></span>
+                    <span>Price</span>
                 </div>
                 <div className="header-block">
                     <span></span>
