@@ -5,7 +5,7 @@ const CheckoutItem = () => {
     return (
         <div className="checkout-item">
             <div className="image-container">
-                
+                <img src="" alt="item" />
             </div>
         </div>
     )
