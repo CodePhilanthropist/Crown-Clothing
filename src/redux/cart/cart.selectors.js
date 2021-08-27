@@ -18,5 +18,5 @@ export const selectCartItemsCount = createSelector(
 )
 
 export const selectCartTotal = createSelector(
-    
+    [selectCartItems]
 )
