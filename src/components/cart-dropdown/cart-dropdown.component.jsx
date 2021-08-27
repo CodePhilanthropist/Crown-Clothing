@@ -18,7 +18,7 @@ const CartDropdown = ({ cartItems }) => {
   );
 };
 
-const mapStateToProps = ({ cart: { cartItems } }) => ({
+const mapStateToProps = (state) => ({
   cartItems,
 });
 
