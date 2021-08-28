@@ -1,6 +1,8 @@
 import React from "react";
 import "./checkout-item.styles.scss";
 
+import {connect} from "react-redux";
+
 const CheckoutItem = ({cartItem: {name, imageUrl, price, quantity}}) => {
   return (
     <div className="checkout-item">
