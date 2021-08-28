@@ -19,4 +19,8 @@ const CheckoutItem = ({cartItem: {name, imageUrl, price, quantity}}) => {
   );
 };
 
+const mapDispatchToProps = dispatch => ({
+  clearItem: item =  dispatch(clearItemFromCart(item))
+})
+
 export default CheckoutItem;
