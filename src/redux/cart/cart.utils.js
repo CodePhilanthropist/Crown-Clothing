@@ -15,6 +15,6 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
 };
 
 
-export const removeItemFromCart = () =>{
-  
+export const removeItemFromCart = (cartItems, cartItemsToRemove) =>{
+
 }
