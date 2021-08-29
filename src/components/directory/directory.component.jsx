@@ -6,7 +6,7 @@ import { selectDirectorySections } from "../../redux/directory/directory.selecto
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-const Directory = ({sections}) => {
+const Directory = ({ sections }) => {
   return (
     <div className="directory-menu">
       {sections.map(({ id, ...otherSectionProps }) => (
@@ -17,8 +17,7 @@ const Directory = ({sections}) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-  sections: selectDirectorySections
-})
-
+  sections: selectDirectorySections,
+});
 
 export default connect(mapStateToProps)(Directory);
