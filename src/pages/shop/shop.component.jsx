@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 
 import collectionsOverview from "../../components/collections-overview/collections-overview.component";
 
-const ShopPage = () => {
+const ShopPage = ({match}) => {
   return (
     <div className="shop-page">
       <Route exact path="" component={collectionsOverview} />
