@@ -15,4 +15,8 @@ const ShopPage = ({ collections }) => {
   );
 };
 
+const mapStateToProps = createStructuredSelector({
+  
+})
+
 export default ShopPage;
