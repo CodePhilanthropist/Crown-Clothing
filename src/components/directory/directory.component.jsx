@@ -21,4 +21,4 @@ const mapStateToProps = createStructuredSelector({
 })
 
 
-export default Directory;
+export default connect(mapStateToProps)(Directory);
