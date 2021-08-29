@@ -12,3 +12,5 @@ const ShopPage = () => {
       </div>
     );
 }
+
+export default ShopPage;
