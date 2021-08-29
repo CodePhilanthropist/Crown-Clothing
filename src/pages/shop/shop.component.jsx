@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CollectionPreview from "../../components/preview-collection/preview-collection.component";
 
-export default class Shop extends Component {
+export default const = () => {
   
   render() {
     const { collections } = this.state;
