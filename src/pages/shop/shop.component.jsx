@@ -1,5 +1,4 @@
 import React from "react";
-import { createStructuredSelector } from "reselect";
 
 import CollectionPreview from "../../components/preview-collection/preview-collection.component";
 import { selectCollections } from "../../redux/shop/shop.selectors";
