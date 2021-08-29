@@ -1,13 +1,13 @@
 import React from "react";
 import {route} from "react-router-dom";
 
-import CollectionPreview from "../../components/preview-collection/preview-collection.component";
+import collectionsOverviewComponent from "../../components/collections-overview/collections-overview.component";
 
 
 const ShopPage = () => {
   return (
     <div className="shop-page">
-      <CollectionPreview/>
+      <Route component={Co}
     </div>
   );
 };
