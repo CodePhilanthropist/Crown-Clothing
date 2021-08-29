@@ -4,7 +4,7 @@ import "./collections-overview.styles.scss";
 import {connect} from "react-redux";
 import { createStructuredSelector } from 'reselect';
 
-const CollectionsOverview = () => {
+const CollectionsOverview = ({collections}) => {
     return (
         <div>
             
