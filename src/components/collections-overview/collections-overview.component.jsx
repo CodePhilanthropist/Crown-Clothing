@@ -20,4 +20,4 @@ const mapStateToProps = createStructuredSelector({
     collections: selectCollections,
   });
 
-export default CollectionsOverview
+export default connect(mapStateToProps)(CollectionsOverview);
