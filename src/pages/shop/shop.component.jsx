@@ -1,11 +1,11 @@
 import React from "react";
 
-import collectionsOverview from "../../components/collections-overview/collections-overview.component";
+import CollectionPreview from "../../components/preview-collection/preview-collection.component";
 
 const ShopPage = ({ collections }) => {
   return (
     <div className="shop-page">
-      <CollectionsOverview/>
+      <CollectionPreview/>
     </div>
   );
 };
