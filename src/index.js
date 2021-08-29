@@ -12,7 +12,7 @@ ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       <BrowserRouter>
-        <PersistGate>
+        <PersistGate persistor={persistor}>
         <App />
         </PersistGate>
       </BrowserRouter>
