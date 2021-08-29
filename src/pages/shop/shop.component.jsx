@@ -1,6 +1,6 @@
 import React from "react";
 
-import CollectionPreview from "../../components/preview-collection/preview-collection.component";
+
 import { selectCollections } from "../../redux/shop/shop.selectors";
 
 const ShopPage = ({ collections }) => {
@@ -13,8 +13,6 @@ const ShopPage = ({ collections }) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  collections: selectCollections,
-});
+
 
 export default ShopPage;
