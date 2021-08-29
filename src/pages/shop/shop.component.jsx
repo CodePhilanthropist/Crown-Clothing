@@ -1,5 +1,6 @@
 import React from "react";
 import CollectionPreview from "../../components/preview-collection/preview-collection.component";
+import { selectShopItems } from "../../redux/shop/shop.selectors";
 
 const ShopPage = ({ collections }) => {
   return (
