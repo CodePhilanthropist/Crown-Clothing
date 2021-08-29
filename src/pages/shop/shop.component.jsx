@@ -6,7 +6,7 @@ import collectionsOverview from "../../components/collections-overview/collectio
 const ShopPage = () => {
   return (
     <div className="shop-page">
-      <Route component={collectionsOverview} />
+      <Route exact path="" component={collectionsOverview} />
     </div>
   );
 };
