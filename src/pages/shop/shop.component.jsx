@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import shopData from "./shop.data";
 import CollectionPreview from "../../components/preview-collection/preview-collection.component";
 
 export default class Shop extends Component {
