@@ -4,7 +4,7 @@ import MenuItem from "../menu-item/menu-item.component";
 
 import { connect } from "react-redux";
 
-class Directory extends React.Component {
+const Directory = ()=>{
   
   render() {
     return (
