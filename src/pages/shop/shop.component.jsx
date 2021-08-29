@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import CollectionPreview from "../../components/preview-collection/preview-collection.component";
 
 const ShopPage = () => {
