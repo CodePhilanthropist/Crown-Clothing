@@ -7,7 +7,7 @@ import collectionsOverview from "../../components/collections-overview/collectio
 const ShopPage = () => {
   return (
     <div className="shop-page">
-      <Route component={Co}
+      <Route component={collectionsOverview}/>
     </div>
   );
 };
