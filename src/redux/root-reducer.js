@@ -15,7 +15,4 @@ const rootReducer = combineReducers({
     cart: cartReducer,
 })
 
-export default combineReducers({
-  user: userReducer,
-  cart: cartReducer,
-});
+export default persistReducer()
