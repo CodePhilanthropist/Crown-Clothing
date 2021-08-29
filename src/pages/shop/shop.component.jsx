@@ -5,7 +5,7 @@ import collectionsOverview from "../../components/collections-overview/collectio
 const ShopPage = ({ collections }) => {
   return (
     <div className="shop-page">
-      
+      <CollectionsOverview/>
     </div>
   );
 };
