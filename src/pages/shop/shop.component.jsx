@@ -5,9 +5,7 @@ import collectionsOverview from "../../components/collections-overview/collectio
 const ShopPage = ({ collections }) => {
   return (
     <div className="shop-page">
-      {collections.map(({ id, ...otherCollectionProps }) => (
-        <CollectionPreview key={id} {...otherCollectionProps} />
-      ))}
+      
     </div>
   );
 };
