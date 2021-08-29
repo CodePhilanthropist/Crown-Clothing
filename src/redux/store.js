@@ -6,5 +6,5 @@ import rootReducer from "./root-reducer";
 
 const middlewares = [logger];
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
-export const persistor
+export const persistor = persistStore()
 export default store;
