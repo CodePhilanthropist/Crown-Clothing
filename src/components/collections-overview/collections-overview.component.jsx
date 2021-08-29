@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 
 const CollectionsOverview = ({collections}) => {
     return (
-        <div>
+        <div className="collections-overview">
             
         </div>
     )
