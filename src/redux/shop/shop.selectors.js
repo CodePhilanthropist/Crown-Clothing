@@ -16,6 +16,6 @@ export const selectCollections = createSelector(
 );
 
 export const selectCollection = (collectionUrlParam) =>
-  createSelector([selectCollections], (collection) =>
-    
+  createSelector([selectCollections], (collections) =>
+    collections[collectionUrlParam]
   );
