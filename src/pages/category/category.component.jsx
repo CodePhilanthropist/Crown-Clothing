@@ -7,7 +7,7 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 const CollectionPage = ({match}) => {
     return (
         <div className="category">
-            <h1>abobot</h1>
+            <h1>collection page</h1>
         </div>
     )
 }
