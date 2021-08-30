@@ -7,7 +7,7 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 const Category = ({match}) => {
     return (
         <div className="category">
-            
+            <h1>abobot</h1>
         </div>
     )
 }
