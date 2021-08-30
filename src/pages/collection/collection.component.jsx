@@ -11,7 +11,7 @@ const CollectionPage = ({match}) => {
     const {title, items} = collection;
     return (
         <div className="collection-page">
-            <h1>collection page</h1>
+            <h1>{title}</h1>
         </div>
     )
 }
