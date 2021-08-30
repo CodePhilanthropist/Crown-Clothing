@@ -115,7 +115,7 @@ const SHOP_DATA = {
       }
     ]
   },
-  {
+  jackets: {
     id: 3,
     title: 'Jackets',
     routeName: 'jackets',
