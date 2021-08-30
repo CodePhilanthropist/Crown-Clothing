@@ -12,4 +12,4 @@ const CollectionPage = ({match}) => {
     )
 }
 
-export default Category;
+export default CollectionPage;
