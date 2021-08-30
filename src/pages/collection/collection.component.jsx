@@ -13,7 +13,11 @@ const CollectionPage = ({match}) => {
         <div className="collection-page">
             <h2 className="title">{title}</h2>
             <div className="items">
-                
+                {
+                    items.map(
+                        item => <CollectionItem/>
+                    )
+                }
             </div>
         </div>
     )
