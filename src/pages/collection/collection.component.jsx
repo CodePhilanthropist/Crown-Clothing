@@ -15,7 +15,7 @@ const CollectionPage = ({match}) => {
             <div className="items">
                 {
                     items.map(
-                        item => <CollectionItem/>
+                        item => <CollectionItem key={item.id}/>
                     )
                 }
             </div>
