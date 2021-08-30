@@ -7,7 +7,7 @@ import "./category.styles.scss";
 
 import CollectionItem from '../../components/collection-item/collection-item.component';
 
-const CollectionPage = ({match}) => {
+const CollectionPage = ({collection}) => {
     const {title, items} = collection;
     return (
         <div className="collection-page">
