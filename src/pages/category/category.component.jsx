@@ -4,7 +4,7 @@ import "./category.styles.scss";
 
 import CollectionItem from '../../components/collection-item/collection-item.component';
 
-const Category = ({match}) => {
+const CollectionPage = ({match}) => {
     return (
         <div className="category">
             <h1>abobot</h1>
