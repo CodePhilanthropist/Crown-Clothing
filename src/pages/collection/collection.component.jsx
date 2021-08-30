@@ -12,6 +12,9 @@ const CollectionPage = ({match}) => {
     return (
         <div className="collection-page">
             <h2 className="title">{title}</h2>
+            <div className="items">
+                
+            </div>
         </div>
     )
 }
