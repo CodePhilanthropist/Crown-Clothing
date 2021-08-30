@@ -6,8 +6,7 @@ const COLLECTION_ID = {
   jackets: 3,
   womens: 4,
   mens: 5,
-
-}
+};
 
 const selectShop = (state) => state.shop;
 
@@ -16,7 +15,7 @@ export const selectCollections = createSelector(
   (shop) => shop.collections
 );
 
-export const selectCollection = collectionUrlParam => createSelector(
-  [selectCollections],
-  collection => collection.find(collection => collection.id === COLLECTION_ID)
-)
+export const selectCollection = (collectionUrlParam) =>
+  createSelector([selectCollections], (collection) =>
+    collection.find((collection) => collection.id === COLLECTION_ID)
+  );
