@@ -152,7 +152,7 @@ const SHOP_DATA = {
       }
     ]
   },
-  {
+  womens: {
     id: 4,
     title: 'Womens',
     routeName: 'womens',
