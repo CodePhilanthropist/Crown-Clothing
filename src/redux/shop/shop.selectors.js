@@ -9,7 +9,7 @@ export const selectCollections = createSelector(
 );
 
 export const selectCollectionsForPreview = createSelector({
-  
+  [selectCollections],
 })
 
 export const selectCollection = (collectionUrlParam) =>
