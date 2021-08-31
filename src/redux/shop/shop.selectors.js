@@ -8,6 +8,10 @@ export const selectCollections = createSelector(
   (shop) => shop.collections
 );
 
+export const selectCollectionsForPreview = createSelector({
+  
+})
+
 export const selectCollection = (collectionUrlParam) =>
   createSelector(
     [selectCollections],
