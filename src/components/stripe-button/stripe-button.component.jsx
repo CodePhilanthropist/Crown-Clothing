@@ -1,7 +1,7 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 
-const StripeButton = () => {
+const StripeCheckoutButton = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const StripeButton = () => {
     )
 }
 
-export default StripeButton
+export default StripeCheckoutButton
