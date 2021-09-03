@@ -5,7 +5,7 @@ const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey =
     "pk_test_51JVJ6wBDiM79ZwHNmCIq0xYV6g2Codxs4MKnvtDJYiXaQeezCp9KlWPwiTvDknNEQ44o1BVtCZRcJVnk7UmvQxjQ007UeWmrhz";
-  return <StripeCheckout lalbel="Pay Now" name="Crown Clothing Co" />;
+  return <StripeCheckout lalbel="Pay Now" name="Crown Clothing Co" billingAddress shippingAddress/>;
 };
 
 export default StripeCheckoutButton;
