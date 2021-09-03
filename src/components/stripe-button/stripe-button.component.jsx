@@ -11,7 +11,7 @@ const StripeCheckoutButton = ({ price }) => {
       name="Crown Clothing Co"
       billingAddress
       shippingAddress
-      image=""
+      image="https://svgshare.com/i/CUz.svg"
     />
   );
 };
