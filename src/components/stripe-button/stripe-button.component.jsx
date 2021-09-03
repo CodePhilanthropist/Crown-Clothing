@@ -3,12 +3,12 @@ import StripeCheckout from "react-stripe-checkout";
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-    const publishableKey =
+  const publishableKey =
     "pk_test_51JVJ6wBDiM79ZwHNmCIq0xYV6g2Codxs4MKnvtDJYiXaQeezCp9KlWPwiTvDknNEQ44o1BVtCZRcJVnk7UmvQxjQ007UeWmrhz";
-    const onToken = token =>{
-        console.log(token)
-        alert("Payment successful!");
-    }
+  const onToken = (token) => {
+    console.log(token);
+    alert("Payment successful!");
+  };
   return (
     <StripeCheckout
       lalbel="Pay Now"
@@ -19,9 +19,8 @@ const StripeCheckoutButton = ({ price }) => {
       description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"
-      token={}
+      token={onToken}
       stripeKey={publishableKey}
-
     />
   );
 };
