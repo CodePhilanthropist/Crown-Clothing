@@ -7,7 +7,6 @@ const StripeCheckoutButton = ({price}) => {
     return (
         <StripeCheckout>
             
-        </StripeCheckout>
     )
 }
 
