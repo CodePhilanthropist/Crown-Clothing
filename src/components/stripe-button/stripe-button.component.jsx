@@ -7,6 +7,7 @@ const StripeCheckoutButton = ({ price }) => {
     "pk_test_51JVJ6wBDiM79ZwHNmCIq0xYV6g2Codxs4MKnvtDJYiXaQeezCp9KlWPwiTvDknNEQ44o1BVtCZRcJVnk7UmvQxjQ007UeWmrhz";
     const onToken = token =>{
         console.log(token)
+        alert("Payment successful!")
     }
   return (
     <StripeCheckout
@@ -19,7 +20,7 @@ const StripeCheckoutButton = ({ price }) => {
       amount={priceForStripe}
       panelLabel="Pay Now"
       token={}
-      
+
     />
   );
 };
