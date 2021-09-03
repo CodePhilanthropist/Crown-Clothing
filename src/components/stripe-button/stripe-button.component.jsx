@@ -9,4 +9,4 @@ const StripeCheckoutButton = () => {
     )
 }
 
-export default StripeCheckoutButton
+export default StripeCheckoutButton;
