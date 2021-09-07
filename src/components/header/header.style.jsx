@@ -28,7 +28,3 @@ export const OptionsContainer = styled.div`
   justify-content: flex-end;
 `;
 
-export const OptionContainer = styled.div`
-  padding: 10px 15px;
-  cursor: pointer;
-`;
