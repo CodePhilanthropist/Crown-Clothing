@@ -50,7 +50,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={textStyles}>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
