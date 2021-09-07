@@ -24,7 +24,7 @@ const Header = ({ currentUser, hidden }) => (
     <LogoContainer to="/">
     <Logo className="logo" />
     </LogoContainer>
-    <div className="options">
+    <OptionsContainer>
       <Link className="option" to="/shop">
         SHOP
       </Link>
@@ -41,7 +41,7 @@ const Header = ({ currentUser, hidden }) => (
         </Link>
       )}
       <CartIcon />
-    </div>
+    </OptionsContainer>
     {hidden ? null : <CartDropdown />}
   </HeaderContainer>
 );
