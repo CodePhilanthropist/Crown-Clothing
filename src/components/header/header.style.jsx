@@ -28,3 +28,6 @@ export const OptionsContainer = styled.div`
   justify-content: flex-end;
 `;
 
+export const OptionLink = styled(Link)`
+
+`;
