@@ -56,7 +56,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={Text}>
+      <div>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
