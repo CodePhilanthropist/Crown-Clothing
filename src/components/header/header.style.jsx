@@ -14,3 +14,7 @@ export const LogoContainer = styled(Link)`
   width: 70px;
   padding: 25px;
 `;
+
+export const OptionsContainer = styled.div`
+
+`;
