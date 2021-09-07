@@ -22,7 +22,7 @@ import { selectCurrentUser } from "./redux/user/user.selectors";
 
 const Text = styled.div`
   color: red;
-  font-sze: 128px,
+  font-size: 58px;
 `
 
 class App extends React.Component {
