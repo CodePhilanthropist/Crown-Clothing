@@ -70,6 +70,7 @@ class App extends React.Component {
             }
           />
         </Switch>
+        <Text>This is an awesome person</Text>
       </div>
     );
   }
