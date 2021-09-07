@@ -23,6 +23,11 @@ const textStyles = {
   fontSize: '24px'
 }
 
+const Text = styled.div`
+  color: red;
+  font-sze: 28px,
+`
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
