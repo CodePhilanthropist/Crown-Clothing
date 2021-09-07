@@ -20,7 +20,7 @@ import {
 } from "./header.style";
 
 const Header = ({ currentUser, hidden }) => (
-  <div className="header">
+  <HeaderContainer>
     <Link className="logo-container" to="/">
       <Logo className="logo" />
     </Link>
@@ -43,7 +43,7 @@ const Header = ({ currentUser, hidden }) => (
       <CartIcon />
     </div>
     {hidden ? null : <CartDropdown />}
-  </div>
+  </HeaderContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
