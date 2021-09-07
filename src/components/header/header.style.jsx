@@ -32,6 +32,3 @@ export const OptionLink = styled(Link)`
   ${OptionContainerStyles}
 `;
 
-export const OptionDev = styled.div`
-  ${OptionContainerStyles}
-`;
