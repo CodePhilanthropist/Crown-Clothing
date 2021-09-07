@@ -21,9 +21,9 @@ import {
 
 const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
-    <Link className="logo-container" to="/">
-      <Logo className="logo" />
-    </Link>
+    <LogoContainer>
+    <Logo className="logo" />
+    </LogoContainer>
     <div className="options">
       <Link className="option" to="/shop">
         SHOP
