@@ -9,6 +9,6 @@ export const HeaderContainer = styled.div`
   margin-bottom: 25px;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
 
 `;    
