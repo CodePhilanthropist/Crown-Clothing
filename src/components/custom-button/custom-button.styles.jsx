@@ -1,7 +1,14 @@
 import styled, { css } from "styled-components";
 
 const invertedButtonStyles = css`
-    
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  &:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
 `;
 
 export const CustomButtonContainer = styled.button`
