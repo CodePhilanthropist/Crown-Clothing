@@ -11,6 +11,11 @@ const invertedButtonStyles = css`
   }
 `;
 
+const googleSignInStyles = css`
+
+
+`;
+
 export const CustomButtonContainer = styled.button`
   min-width: 165px;
   width: auto;
