@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 
+const invertedButtonStyles = css`
+    
+`;
+
 export const CustomButtonContainer = styled.button`
   min-width: 165px;
   width: auto;
