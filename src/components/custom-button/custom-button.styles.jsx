@@ -20,6 +20,12 @@ const googleSignInStyles = css`
   }
 `;
 
+const getButtonStyles = props => {
+    if (props.googleSignIn){
+        return googleSignInStyles;
+    }
+}
+
 export const CustomButtonContainer = styled.button`
   min-width: 165px;
   width: auto;
