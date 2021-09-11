@@ -47,7 +47,7 @@ const config = {
     return userRef;
   };
 
-  export const addCollectionAndItems = (collectionKey, objectsToAdd ) => {
+  export const addCollectionAndDocuments = (collectionKey, objectsToAdd ) => {
     const collectionRef = firestore.collection(collectionKey);
   }
   
