@@ -48,7 +48,7 @@ const config = {
   };
 
   export const addCollectionAndItems = (collectionKey, objectsToAdd ) => {
-    
+    const collectionRef = firestore.collection(collectionKey);
   }
   
   export const auth = firebase.auth();
