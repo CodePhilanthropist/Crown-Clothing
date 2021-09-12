@@ -68,10 +68,10 @@ export const convertCollectionsSnapshotToMap = (collections) => {
       routeName: encodeURI(title.toLowerCase()),
       id: doc.id,
       title,
-      items
+      items,
     };
   });
-  console.log(transformedCollection)
+  console.log(transformedCollection);
 };
 
 export const auth = firebase.auth();
