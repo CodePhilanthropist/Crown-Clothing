@@ -8,6 +8,10 @@ class ShopPage extends React.Component {
 
   unsubscribeFromSnapshot = null;
 
+  componentDidMount(){
+    
+  }
+
   render() {
     const { match } = this.props;
     return (
