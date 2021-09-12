@@ -9,7 +9,9 @@ import { firestore } from "../../firebase/firebase.utils";
 class ShopPage extends React.Component {
   unsubscribeFromSnapshot = null;
 
-  componentDidMount() {}
+  componentDidMount() {
+    const collectionRef = firestore.collection('collections')
+  }
 
   render() {
     const { match } = this.props;
