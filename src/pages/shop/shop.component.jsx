@@ -5,6 +5,9 @@ import collectionsOverview from "../../components/collections-overview/collectio
 import CollectionPage from "../collection/collection.component";
 
 class ShopPage extends React.Component {
+
+  unsubscribeFromSnapshot = null;
+
   render() {
     const { match } = this.props;
     return (
