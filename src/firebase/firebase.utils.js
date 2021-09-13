@@ -71,7 +71,7 @@ export const convertCollectionsSnapshotToMap = (collections) => {
       items,
     };
   });
-  console.log(transformedCollection);
+ 
 };
 
 export const auth = firebase.auth();
