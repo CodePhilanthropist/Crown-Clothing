@@ -17,7 +17,8 @@ import { updateCollections } from "../../redux/shop/shop.actions";
 class ShopPage extends React.Component {
   state = {
     loading: true,
-  }
+  };
+  
   unsubscribeFromSnapshot = null;
 
   componentDidMount() {
