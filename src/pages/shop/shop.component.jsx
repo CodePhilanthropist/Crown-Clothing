@@ -43,13 +43,13 @@ class ShopPage extends React.Component {
           exact
           path={`${match.path}`}
           render={(props) => (
-            <collectionOverViewWithSpinner isLoading={loading} {...props} />
+            <CollectionOverViewWithSpinner isLoading={loading} {...props} />
           )}
         />
         <Route
           path={`${match.path}/:collectionId`}
           render={(props) => (
-            <collectionPageWithSpinner isLoading={loading} {...props} />
+            <CollectionPageWithSpinner isLoading={loading} {...props} />
           )}
         />
       </div>
