@@ -15,6 +15,11 @@ import {
 import { updateCollections } from "../../redux/shop/shop.actions";
 
 class ShopPage extends React.Component {
+  constructor(props){
+    this.state = {
+      
+    }
+  }
   unsubscribeFromSnapshot = null;
 
   componentDidMount() {
