@@ -18,7 +18,7 @@ class ShopPage extends React.Component {
   constructor(props){
     super();
     this.state = {
-
+      loading: true,
     }
   }
   unsubscribeFromSnapshot = null;
