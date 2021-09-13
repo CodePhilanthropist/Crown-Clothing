@@ -39,7 +39,7 @@ class ShopPage extends React.Component {
     const {loading} = this.state;
     return (
       <div className="shop-page">
-        <Route exact path={`${match.path}`} render={(props) => <collectionOverViewWithSpinner isLoading={} {...props}/>} />
+        <Route exact path={`${match.path}`} render={(props) => <collectionOverViewWithSpinner isLoading={loading} {...props}/>} />
         <Route
           path={`${match.path}/:collectionId`}
           component={CollectionPage}
