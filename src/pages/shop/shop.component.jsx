@@ -1,5 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import {connect} from "react-redux";
 
 import collectionsOverview from "../../components/collections-overview/collections-overview.component";
 import CollectionPage from "../collection/collection.component";
