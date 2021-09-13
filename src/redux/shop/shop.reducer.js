@@ -1,5 +1,7 @@
 import SHOP_DATA from "./shop.data";
 
+import shopActionTypes from "./shop.types";
+
 const INITIAL_STATE = {
   collections: SHOP_DATA,
 };
