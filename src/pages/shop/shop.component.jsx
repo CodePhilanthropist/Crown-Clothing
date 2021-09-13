@@ -9,6 +9,7 @@ import {
   convertCollectionsSnapshotToMap,
   firestore,
 } from "../../firebase/firebase.utils";
+import { updateCollections } from "../../redux/shop/shop.actions";
 
 class ShopPage extends React.Component {
   unsubscribeFromSnapshot = null;
@@ -34,5 +35,9 @@ class ShopPage extends React.Component {
     );
   }
 }
+
+const mapDispatchToProps = dispatch => ({
+  updateCollections: collectionsMap => dispatch(updateCollections(collectionsMap))
+})
 
 export default ShopPage;
