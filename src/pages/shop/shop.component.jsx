@@ -15,6 +15,7 @@ import {
 import { updateCollections } from "../../redux/shop/shop.actions";
 
 const collectionOverViewWithSpinner = WithSpinner(collectionsOverview);
+const collectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
   state = {
