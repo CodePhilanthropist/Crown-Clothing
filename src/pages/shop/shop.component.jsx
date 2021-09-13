@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 
 import collectionsOverview from "../../components/collections-overview/collections-overview.component";
 import CollectionPage from "../collection/collection.component";
@@ -38,8 +38,9 @@ class ShopPage extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  updateCollections: collectionsMap => dispatch(updateCollections(collectionsMap))
-})
+const mapDispatchToProps = (dispatch) => ({
+  updateCollections: (collectionsMap) =>
+    dispatch(updateCollections(collectionsMap)),
+});
 
 export default ShopPage;
