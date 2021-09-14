@@ -1,5 +1,5 @@
 const shopActionTypes = {
-  UPDATE_COLLECTIONS: "UPDATE_COLLECTIONS",
+  FETCH_COLLECTIONS_START: "UPDATE_COLLECTIONS",
 };
 
 export default shopActionTypes;
