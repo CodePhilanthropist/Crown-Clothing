@@ -28,6 +28,8 @@ class ShopPage extends React.Component {
     const { updateCollections } = this.props;
 
     fetch('https://firestore.googleapis.com/v1/projects/crown-db-eef55/databases/(default)/documents/collectoins')
+    .then(response => response.json())
+    .then(collections => console.log(collections))
 
     // const collectionRef = firestore.collection("collections");
     // collectionRef.get().then(async (snapshot) => {
