@@ -7,10 +7,10 @@ import CollectionPage from "../collection/collection.component";
 
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
-import {
-  convertCollectionsSnapshotToMap,
-  firestore,
-} from "../../firebase/firebase.utils";
+// import {
+//   convertCollectionsSnapshotToMap,
+//   firestore,
+// } from "../../firebase/firebase.utils";
 
 import { updateCollections } from "../../redux/shop/shop.actions";
 
