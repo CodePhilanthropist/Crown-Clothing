@@ -6,6 +6,11 @@ export const fetchCollectionsStart = () => ({
 
 export const fetchCollectionsStartAsync = () => {
   return dispatch => {
-    
+    const collectionRef = firestore.collection("collections");
+    collectionRef.get().then(async (snapshot) => {
+      const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+      updateCollections(collectionsMap);
+      this.setState({ loading: false });
+    });
   }
 }
