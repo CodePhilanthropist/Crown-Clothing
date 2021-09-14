@@ -27,7 +27,7 @@ class ShopPage extends React.Component {
   componentDidMount() {
     const { updateCollections } = this.props;
 
-    fetch('https://firestore.googleapis.com/v1/projects/crown-db-eef55/databases/(default)/documents/')
+    fetch('https://firestore.googleapis.com/v1/projects/crown-db-eef55/databases/(default)/documents/collectoins')
 
     // const collectionRef = firestore.collection("collections");
     // collectionRef.get().then(async (snapshot) => {
