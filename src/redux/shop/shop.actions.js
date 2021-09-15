@@ -5,6 +5,10 @@ export const fetchCollectionsStart = () => ({
   type: shopActionTypes.FETCH_COLLECTIONS_START,
 });
 
+export const fetchCollectionsSuccess = collectionsMap => ({
+  
+})
+
 export const fetchCollectionsStartAsync = () => {
   return (dispatch) => {
     const collectionRef = firestore.collection("collections");
