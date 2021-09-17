@@ -1,21 +1,22 @@
 import shopActionTypes from "./shop.types";
-import { firestore, convertCollectionsSnapshotToMap } from "../../firebase/firebase.utils";
+import {
+  firestore,
+  convertCollectionsSnapshotToMap,
+} from "../../firebase/firebase.utils";
 
 export const fetchCollectionsStart = () => ({
   type: shopActionTypes.FETCH_COLLECTIONS_START,
 });
 
-export const fetchCollectionsSuccess = collectionsMap => ({
-  
-})
+export const fetchCollectionsSuccess = (collectionsMap) => ({});
 
 export const fetchCollectionsStartAsync = () => {
   return (dispatch) => {
     const collectionRef = firestore.collection("collections");
-    dispatch(fetchCollectionsStart())
+    dispatch(fetchCollectionsStart());
     collectionRef.get().then(async (snapshot) => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-     dispatch(fetchCollectionsSuccess(collectionsMap))
+      dispatch(fetchCollectionsSuccess(collectionsMap));
       this.setState({ loading: false });
     });
   };
