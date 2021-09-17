@@ -15,7 +15,7 @@ export const fetchCollectionsStartAsync = () => {
     dispatch(fetchCollectionsStart())
     collectionRef.get().then(async (snapshot) => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-      updateCollections(collectionsMap);
+     dispatch(fetchCollectionsSuccess(collectionsMap))
       this.setState({ loading: false });
     });
   };
