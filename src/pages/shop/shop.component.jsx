@@ -8,12 +8,8 @@ import CollectionPage from "../collection/collection.component";
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
 
-import {
-  convertCollectionsSnapshotToMap,
-  firestore,
-} from "../../firebase/firebase.utils";
 
-import { updateCollections } from "../../redux/shop/shop.actions";
+import { fetchCollectionsStart } from "../../redux/shop/shop.actions";
 
 const CollectionOverViewWithSpinner = WithSpinner(collectionsOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
