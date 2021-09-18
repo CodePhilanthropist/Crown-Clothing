@@ -19,11 +19,7 @@ const CollectionOverViewWithSpinner = WithSpinner(collectionsOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
-  state = {
-    loading: true,
-  };
 
-  unsubscribeFromSnapshot = null;
 
   componentDidMount() {
    
