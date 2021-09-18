@@ -18,7 +18,7 @@ class ShopPage extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { match } = this.props;
+    const { match, isCollectionFetching } = this.props;
     return (
       <div className="shop-page">
         <Route
