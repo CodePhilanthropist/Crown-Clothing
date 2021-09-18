@@ -9,19 +9,13 @@ import { selectIsCollectionFetching } from "../../redux/shop/shop.selectors";
 
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
-
-
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
 
 const CollectionOverViewWithSpinner = WithSpinner(collectionsOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
-
-
-  componentDidMount() {
-   
-  }
+  componentDidMount() {}
 
   render() {
     const { match } = this.props;
@@ -47,11 +41,9 @@ class ShopPage extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  isCollectionFetching: selectIsCollectionFetching
-})
-
-const mapDispatchToProps = (dispatch) => ({
-  
+  isCollectionFetching: selectIsCollectionFetching,
 });
+
+const mapDispatchToProps = (dispatch) => ({});
 
 export default connect(null, mapDispatchToProps)(ShopPage);
