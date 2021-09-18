@@ -7,6 +7,7 @@ import CollectionPage from "../collection/collection.component";
 
 import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
+
 import {
   convertCollectionsSnapshotToMap,
   firestore,
@@ -25,14 +26,7 @@ class ShopPage extends React.Component {
   unsubscribeFromSnapshot = null;
 
   componentDidMount() {
-    const { updateCollections } = this.props;
-
-    const collectionRef = firestore.collection("collections");
-    collectionRef.get().then(async (snapshot) => {
-      const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-      updateCollections(collectionsMap);
-      this.setState({ loading: false });
-    });
+   
   }
 
   render() {
