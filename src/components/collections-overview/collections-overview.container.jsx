@@ -15,6 +15,3 @@ const collectionsOverviewContainer = compose(
     WithSpinner
 )(collectionsOverview)
 
-(
-  WithSpinner(collectionsOverview)
-);
