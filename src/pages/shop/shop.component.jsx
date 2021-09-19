@@ -29,12 +29,7 @@ class ShopPage extends React.Component {
         <Route
           exact
           path={`${match.path}`}
-          render={(props) => (
-            <CollectionOverViewWithSpinner
-              isLoading={isCollectionFetching}
-              {...props}
-            />
-          )}
+          component={CollectionsOverviewContainer}
         />
         <Route
           path={`${match.path}/:collectionId`}
