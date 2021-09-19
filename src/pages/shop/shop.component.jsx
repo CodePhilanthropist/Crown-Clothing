@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
 import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
-import CollectionPageContianer from "../collection/collection.container";
+import CollectionPageContainer from "../collection/collection.container";
 
 
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
