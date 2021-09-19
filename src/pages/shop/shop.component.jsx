@@ -34,9 +34,6 @@ class ShopPage extends React.Component {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  isCollectionsLoaded: selectIsCollectionsLoaded,
-});
 
 const mapDispatchToProps = (dispatch) => ({
   fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
