@@ -4,6 +4,7 @@ import { persistStore } from "redux-persist";
 
 import rootReducer from "./root-reducer";
 import thunk from "redux-thunk";
+import createSagaMiddleware from "@redux-saga/core";
 
 const middlewares = [thunk];
 
