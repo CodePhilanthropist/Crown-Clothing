@@ -14,7 +14,6 @@ import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
 
-const CollectionOverViewWithSpinner = WithSpinner(collectionsOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
