@@ -6,7 +6,6 @@ import { createStructuredSelector } from "reselect";
 import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
 import CollectionPageContianer from "../collection/collection.container";
 
-import WithSpinner from "../../components/with-spinner/with-spinner.component";
 
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
 
