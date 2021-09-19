@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.component";
+import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
 import CollectionPage from "../collection/collection.component";
 import {
   selectIsCollectionFetching,
