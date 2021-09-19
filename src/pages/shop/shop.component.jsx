@@ -6,7 +6,6 @@ import { createStructuredSelector } from "reselect";
 import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
 import CollectionPage from "../collection/collection.component";
 import {
-  selectIsCollectionFetching,
   selectIsCollectionsLoaded,
 } from "../../redux/shop/shop.selectors";
 
