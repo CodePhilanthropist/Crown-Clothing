@@ -9,7 +9,6 @@ import CollectionPageContianer from "../collection/collection.container";
 
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop.actions";
 
-const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
   componentDidMount() {
