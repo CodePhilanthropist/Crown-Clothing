@@ -7,5 +7,5 @@ export function* fetchCollectionsAsync(){
 }
 
 export function* fetchCollectionsStart(){
-    yield takeEvery(shopActionTypes.FETCH_COLLECTIONS_START, )
+    yield takeEvery(shopActionTypes.FETCH_COLLECTIONS_START, fetchCollectionsAsync)
 }
