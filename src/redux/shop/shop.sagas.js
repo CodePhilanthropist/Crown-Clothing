@@ -7,7 +7,7 @@ import {
   convertCollectionsSnapshotToMap,
 } from "../../firebase/firebase.utils";
 
-import { fetchCollectionsSuccess } from "./shop.actions";
+import { fetchCollectionsSuccess, fetchCollectionFailure } from "./shop.actions";
 
 export function* fetchCollectionsAsync() {
   yield console.log("I am fire");
