@@ -6,7 +6,7 @@ import rootReducer from "./root-reducer";
 import thunk from "redux-thunk";
 import createSagaMiddleware from "redux-saga";
 
-const middlewares = [thunk];
+const middlewares = [];
 
 if (process.env.NODE_ENV === "development") {
   middlewares.push(logger);
