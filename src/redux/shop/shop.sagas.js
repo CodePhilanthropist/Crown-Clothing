@@ -12,6 +12,9 @@ import { fetchCollectionsSuccess, fetchCollectionFailure } from "./shop.actions"
 export function* fetchCollectionsAsync() {
   yield console.log("I am fire");
   const collectionRef = firestore.collection("collections");
+  const snapshot = yield collectionRef.get()
+
+
   // collectionRef
   //   .get()
   //   .then(async (snapshot) => {
