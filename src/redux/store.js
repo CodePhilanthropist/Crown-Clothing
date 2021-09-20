@@ -5,6 +5,8 @@ import { persistStore } from "redux-persist";
 import rootReducer from "./root-reducer";
 import createSagaMiddleware from "redux-saga";
 
+const sagaMiddleware = createSagaMiddleware();
+
 const middlewares = [];
 
 if (process.env.NODE_ENV === "development") {
