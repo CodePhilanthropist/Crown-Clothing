@@ -23,12 +23,6 @@ export const fetchCollectionsStartAsync = () => {
     const collectionRef = firestore.collection("collections");
     dispatch(fetchCollectionsStart());
 
-    collectionRef
-      .get()
-      .then(async (snapshot) => {
-        const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-        dispatch(fetchCollectionsSuccess(collectionsMap));
-      })
-      .catch((error) => dispatch(fetchCollectionFailure(error.message)));
+   
   };
 };
