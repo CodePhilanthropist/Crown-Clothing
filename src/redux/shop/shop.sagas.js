@@ -5,12 +5,12 @@ import shopActionTypes from "./shop.types";
 export function* fetchCollectionsAsync() {
   yield console.log("I am fire");
   collectionRef
-  .get()
-  .then(async (snapshot) => {
-    const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-    dispatch(fetchCollectionsSuccess(collectionsMap));
-  })
-  .catch((error) => dispatch(fetchCollectionFailure(error.message)));
+    .get()
+    .then(async (snapshot) => {
+      const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+      dispatch(fetchCollectionsSuccess(collectionsMap));
+    })
+    .catch((error) => dispatch(fetchCollectionFailure(error.message)));
 }
 
 export function* fetchCollectionsStart() {
