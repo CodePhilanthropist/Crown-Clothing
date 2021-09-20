@@ -4,6 +4,8 @@ import shopActionTypes from "./shop.types";
 
 export function* fetchCollectionsAsync() {
   yield console.log("I am fire");
+  const collectionRef = firestore.collection("collections");
+    dispatch(fetchCollectionsStart());
   collectionRef
     .get()
     .then(async (snapshot) => {
