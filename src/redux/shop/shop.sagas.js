@@ -29,7 +29,7 @@ export function* fetchCollectionsAsync() {
 }
 
 export function* fetchCollectionsStart() {
-  yield takeEvery(
+  yield takeLatest(
     shopActionTypes.FETCH_COLLECTIONS_START,
     fetchCollectionsAsync
   );
