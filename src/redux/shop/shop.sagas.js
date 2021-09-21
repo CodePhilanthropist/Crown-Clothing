@@ -25,7 +25,6 @@ export function* fetchCollectionsAsync() {
   } catch (error) {
     yield put(fetchCollectionFailure(error.message));
   }
-
 }
 
 export function* fetchCollectionsStart() {
