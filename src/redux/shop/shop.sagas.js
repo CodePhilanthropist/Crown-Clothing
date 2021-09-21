@@ -21,9 +21,9 @@ export function* fetchCollectionsAsync() {
       convertCollectionsSnapshotToMap,
       snapshot
     );
-    yield put(fetchCollectionsSuccess(collectionsMap))
+    yield put(fetchCollectionsSuccess(collectionsMap));
   } catch (eror) {
-    yield put(fetchCollectionFailure(error.message))
+    yield put(fetchCollectionFailure(error.message));
   }
 
   // collectionRef
