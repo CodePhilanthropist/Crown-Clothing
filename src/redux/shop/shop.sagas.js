@@ -22,7 +22,7 @@ export function* fetchCollectionsAsync() {
       snapshot
     );
     yield put(fetchCollectionsSuccess(collectionsMap));
-  } catch (eror) {
+  } catch (error) {
     yield put(fetchCollectionFailure(error.message));
   }
 
