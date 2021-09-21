@@ -1,4 +1,4 @@
-import { takeEvery, call } from "redux-saga/effects";
+import { takeEvery, call, put } from "redux-saga/effects";
 
 import shopActionTypes from "./shop.types";
 
