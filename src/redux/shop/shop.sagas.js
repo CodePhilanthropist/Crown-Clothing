@@ -14,13 +14,14 @@ import {
 
 export function* fetchCollectionsAsync() {
   yield console.log("I am fire");
-  try{
+  try {
     const collectionRef = firestore.collection("collections");
-  const snapshot = yield collectionRef.get();
-  const collectionsMap = yield call(convertCollectionsSnapshotToMap, snapshot);
-  }catch(eror){
-    
-  }
+    const snapshot = yield collectionRef.get();
+    const collectionsMap = yield call(
+      convertCollectionsSnapshotToMap,
+      snapshot
+    );
+  } catch (eror) {}
 
   // collectionRef
   //   .get()
