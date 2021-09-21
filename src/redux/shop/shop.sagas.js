@@ -7,13 +7,16 @@ import {
   convertCollectionsSnapshotToMap,
 } from "../../firebase/firebase.utils";
 
-import { fetchCollectionsSuccess, fetchCollectionFailure } from "./shop.actions";
+import {
+  fetchCollectionsSuccess,
+  fetchCollectionFailure,
+} from "./shop.actions";
 
 export function* fetchCollectionsAsync() {
   yield console.log("I am fire");
   const collectionRef = firestore.collection("collections");
-  const snapshot = yield collectionRef.get()
-  const collectionsMap = yield call(convertCollectionsSnapshotToMap, snapshot)
+  const snapshot = yield collectionRef.get();
+  const collectionsMap = yield call(convertCollectionsSnapshotToMap, snapshot);
 
   // collectionRef
   //   .get()
