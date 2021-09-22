@@ -22,8 +22,6 @@ class App extends React.Component {
 
   componentDidMount() {
     const { setCurrentUser } = this.props;
-
-
   }
 
   componentWillUnmount() {
