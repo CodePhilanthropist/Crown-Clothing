@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {connect} from "react-redux";
+
 import FormInput from "../form-input/form-input.component";
 import "./sign-in.styles.scss";
 import { CustomButton } from "../custom-button/custom-button.component";
