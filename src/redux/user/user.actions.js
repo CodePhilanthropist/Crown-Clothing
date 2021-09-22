@@ -9,6 +9,6 @@ export const googleSignInStart = () => ({
   type: UserActionTypes.GOOGLE_SIGN_IN_START,
 });
 
-export const googleSignInSuccess = () => ({
-  
+export const googleSignInSuccess = (user) => ({
+
 })
