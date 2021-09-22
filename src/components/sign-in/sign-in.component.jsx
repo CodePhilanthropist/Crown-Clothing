@@ -5,7 +5,10 @@ import FormInput from "../form-input/form-input.component";
 import "./sign-in.styles.scss";
 import { CustomButton } from "../custom-button/custom-button.component";
 
-import { googleSignInStart, emailSignInStart } from "../../redux/user/user.actions";
+import {
+  googleSignInStart,
+  emailSignInStart,
+} from "../../redux/user/user.actions";
 
 class SignIn extends Component {
   constructor(props) {
@@ -19,8 +22,6 @@ class SignIn extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = this.state;
-
-  
   };
 
   handleChange = (event) => {
@@ -78,7 +79,7 @@ class SignIn extends Component {
 
 const mapDispatchToProps = (dispatch) => ({
   googleSignInStart: () => dispatch(googleSignInStart()),
-  emailSignInStart: () => dispatch(emailSignInStart())
+  emailSignInStart: () => dispatch(emailSignInStart()),
 });
 
 export default connect(null, mapDispatchToProps)(SignIn);
