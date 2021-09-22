@@ -4,7 +4,11 @@ import UserActionTypes from "./user.types";
 import { auth, googleProvider, createUserProfileDocument } from "../../firebase/firebase.utils";
 
 export function* signInWithGoogle(){
-
+    try{
+        yield 
+    }catch(error){
+        console.error(error);
+    }
 }
 
 export function* onGoogleSignInStart(){
