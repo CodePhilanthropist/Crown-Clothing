@@ -9,7 +9,7 @@ import {
 
 export function* signInWithGoogle() {
   try {
-    const user = yield auth.signInWithPopup(googleProvider);
+    const {user} = yield auth.signInWithPopup(googleProvider);
 
   } catch (error) {
     console.error(error);
