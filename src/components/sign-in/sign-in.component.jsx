@@ -23,6 +23,8 @@ class SignIn extends Component {
     event.preventDefault();
     const { email, password } = this.state;
     const { emailSignInStart } = this.props;
+
+    emailSignInStart();
   };
 
   handleChange = (event) => {
