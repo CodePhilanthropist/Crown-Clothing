@@ -74,12 +74,12 @@ class SignIn extends Component {
         </form>
       </div>
     );
-  }
+  } 
 }
 
 const mapDispatchToProps = (dispatch) => ({
   googleSignInStart: () => dispatch(googleSignInStart()),
-  emailSignInStart: () => dispatch(emailSignInStart()),
+  emailSignInStart: (email, password) => dispatch(emailSignInStart({email, password})),
 });
 
 export default connect(null, mapDispatchToProps)(SignIn);
