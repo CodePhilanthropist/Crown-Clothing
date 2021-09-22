@@ -3,7 +3,7 @@ import FormInput from "../form-input/form-input.component";
 import "./sign-in.styles.scss";
 import { CustomButton } from "../custom-button/custom-button.component";
 import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
-import { googleSignInStart } from "../../redux/user/user.sagas";
+import { googleSignInStart } from "../../redux/user/user.actions";
 
 class SignIn extends Component {
   constructor(props) {
