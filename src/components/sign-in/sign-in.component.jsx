@@ -24,7 +24,7 @@ class SignIn extends Component {
     const { email, password } = this.state;
     const { emailSignInStart } = this.props;
 
-    emailSignInStart();
+    emailSignInStart(email, password);
   };
 
   handleChange = (event) => {
