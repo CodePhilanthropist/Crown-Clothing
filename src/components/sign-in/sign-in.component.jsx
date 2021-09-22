@@ -22,6 +22,7 @@ class SignIn extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = this.state;
+    const { email, password } = this.props;
   };
 
   handleChange = (event) => {
