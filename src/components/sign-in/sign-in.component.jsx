@@ -66,7 +66,7 @@ class SignIn extends Component {
               {" "}
               Sign in
             </CustomButton>
-            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+            <CustomButton onClick={googleSignInStart} isGoogleSignIn>
               {" "}
               Sign in with Google
             </CustomButton>
