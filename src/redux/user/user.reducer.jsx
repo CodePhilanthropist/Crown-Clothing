@@ -13,6 +13,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
         currentUser: action.payload,
       };
     case UserActionTypes.GOOGLE_SIGN_IN_FAILURE:
+    case UserActionTypes.EMAIL_SIGN_IN_FAILURE:
     default:
       return state;
   }
