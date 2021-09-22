@@ -1,5 +1,6 @@
 import { takeLatest, put, all, call } from "redux-saga/effects";
 import UserActionTypes from "./user.types";
+import { googleSignInSuccess } from "./user.actions";
 
 import {
   auth,
@@ -12,6 +13,7 @@ export function* signInWithGoogle() {
     const { user } = yield auth.signInWithPopup(googleProvider);
     const userRef = yield call(createUserProfileDocument, user);
     const userSnapshot = yield userRef.get()
+
   } catch (error) {
     console.error(error);
   }
