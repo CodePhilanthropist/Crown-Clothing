@@ -8,3 +8,7 @@ export const setCurrentUser = (user) => ({
 export const googleSignInStart = () => ({
   type: UserActionTypes.GOOGLE_SIGN_IN_START,
 });
+
+export const googleSignInSuccess = () => ({
+  
+})
