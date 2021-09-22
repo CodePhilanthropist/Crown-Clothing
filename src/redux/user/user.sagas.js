@@ -1,1 +1,1 @@
-import {all, acll} from "redux-saga/effects";
+import {takeLatest, put} from "redux-saga/effects";
