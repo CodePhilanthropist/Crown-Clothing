@@ -5,7 +5,7 @@ import { auth, googleProvider, createUserProfileDocument } from "../../firebase/
 
 export function* signInWithGoogle(){
     try{
-        yield 
+        const userRef = yield auth.signInWithPopup(googleProvider) 
     }catch(error){
         console.error(error);
     }
