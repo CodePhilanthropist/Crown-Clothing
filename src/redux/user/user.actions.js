@@ -23,3 +23,7 @@ export const emailSignInStart = () => ({
   type: UserActionTypes.EMAIL_SIGN_IN_START,
 });
 
+export const emailSignInSuccess = (user) => ({
+  type: UserActionTypes.EMAIL_SIGN_IN_SUCCESS,
+  payload: user,
+});
