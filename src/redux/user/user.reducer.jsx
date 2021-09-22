@@ -12,9 +12,11 @@ const userReducer = (state = INITIAL_STATE, action) => {
         ...state,
         currentUser: action.payload
       };
+      case UserActionTypes.GOOGLE_SIGN_IN_FAILURE:
     default:
       return state;
   }
+
 };
 
 export default userReducer;
