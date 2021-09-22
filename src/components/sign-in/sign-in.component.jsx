@@ -78,6 +78,7 @@ class SignIn extends Component {
 
 const mapDispatchToProps = (dispatch) => ({
   googleSignInStart: () => dispatch(googleSignInStart()),
+  emailSignInStart: () => dispatch(emailSignInStart())
 });
 
 export default connect(null, mapDispatchToProps)(SignIn);
