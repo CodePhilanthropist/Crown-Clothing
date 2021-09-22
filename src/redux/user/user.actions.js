@@ -14,6 +14,4 @@ export const googleSignInSuccess = (user) => ({
   payload: user,
 });
 
-export const googleSignInFailure = error => ({
-  
-})
+export const googleSignInFailure = (error) => ({});
