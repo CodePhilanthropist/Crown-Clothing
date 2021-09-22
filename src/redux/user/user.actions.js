@@ -18,3 +18,8 @@ export const googleSignInFailure = (error) => ({
   type: UserActionTypes.GOOGLE_SIGN_IN_FAILURE,
   payload: error,
 });
+
+export const emailSignInStart = () => ({
+  type: UserActionTypes.EMAIL_SIGN_IN_START,
+});
+
