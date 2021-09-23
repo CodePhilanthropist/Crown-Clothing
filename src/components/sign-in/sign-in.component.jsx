@@ -8,7 +8,6 @@ import { CustomButton } from "../custom-button/custom-button.component";
 import {
   googleSignInStart,
   emailSignInStart,
-  emailSignInSuccess
 } from "../../redux/user/user.actions";
 
 class SignIn extends Component {
