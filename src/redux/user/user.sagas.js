@@ -28,6 +28,11 @@ export function* signInWithGoogle() {
 export function* signInWithEmail({ payload: { email, password } }) {
   try {
     const { user } = yield auth.signInWithEmailAndPassword(email, password);
+    const userRef = yield call(createUserProfileDocument, user);
+    const userSnapshot = yield userRef.get();
+    yield put(
+      googleSignInSuccess({ id: userSnapshot.id, ...userSnapshot.data() })
+    );
   } catch (error) {
     yield put(emailSignInFailure(error));
   }
