@@ -8,8 +8,15 @@ import {
   createUserProfileDocument,
 } from "../../firebase/firebase.utils";
 
-export function* getSnapshotFromUserAuth(userAuth){
-    
+export function* getSnapshotFromUserAuth(userAuth) {
+  try {
+    const { user } = yield auth.signInWithPopup(googleProvider);
+    const userRef = yield call(createUserProfileDocument, user);
+    const userSnapshot = yield userRef.get();
+    yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
+  } catch (error) {
+    yield put(signInFailure(error));
+  }
 }
 
 export function* signInWithGoogle() {
