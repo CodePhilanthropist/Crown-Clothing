@@ -1,6 +1,10 @@
 import { takeLatest, put, all, call } from "redux-saga/effects";
 import UserActionTypes from "./user.types";
-import { googleSignInSuccess, googleSignInFailure, emailSignInFailure } from "./user.actions";
+import {
+  googleSignInSuccess,
+  googleSignInFailure,
+  emailSignInFailure,
+} from "./user.actions";
 
 import {
   auth,
@@ -21,20 +25,20 @@ export function* signInWithGoogle() {
   }
 }
 
-export function* signInWithEmail({payload: {email, password}}){
-    try{
-
-    }catch(error){
-        yield put(emailSignInFailure(error))
-    }
+export function* signInWithEmail({ payload: { email, password } }) {
+  try {
+    const { user } = yield auth.signInWithEmailAndPassword(email, password);
+  } catch (error) {
+    yield put(emailSignInFailure(error));
+  }
 }
 
 export function* onGoogleSignInStart() {
   yield takeLatest(UserActionTypes.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
-export function* onEmailSignIn(){
-    yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, signInWithEmail)
+export function* onEmailSignIn() {
+  yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, signInWithEmail);
 }
 
 export function* userSagas() {
