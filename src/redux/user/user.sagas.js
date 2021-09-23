@@ -3,8 +3,6 @@ import UserActionTypes from "./user.types";
 import {
   googleSignInSuccess,
   googleSignInFailure,
-  emailSignInFailure,
-  emailSignInSuccess,
 } from "./user.actions";
 
 import {
