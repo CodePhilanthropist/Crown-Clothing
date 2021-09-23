@@ -21,7 +21,7 @@ export function* signInWithGoogle() {
   }
 }
 
-export function* signInWithEmail(){
+export function* signInWithEmail({payload: {email, password}}){
 
 }
 
