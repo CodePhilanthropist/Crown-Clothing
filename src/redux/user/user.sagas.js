@@ -25,7 +25,7 @@ export function* signInWithEmail({payload: {email, password}}){
     try{
 
     }catch(error){
-        put(emailSignInFailure(error))
+        yield put(emailSignInFailure(error))
     }
 }
 
