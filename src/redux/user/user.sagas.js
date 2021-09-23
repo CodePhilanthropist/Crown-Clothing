@@ -10,7 +10,6 @@ import {
 
 export function* getSnapshotFromUserAuth(userAuth) {
   try {
-    const { user } = yield auth.signInWithPopup(googleProvider);
     const userRef = yield call(createUserProfileDocument, userAuth);
     const userSnapshot = yield userRef.get();
     yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
