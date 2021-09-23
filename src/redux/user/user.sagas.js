@@ -25,6 +25,10 @@ export function* onGoogleSignInStart() {
   yield takeLatest(UserActionTypes.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
+export function* onEmailSignIn(){
+    
+}
+
 export function* userSagas() {
   yield all([call(onGoogleSignInStart)]);
 }
