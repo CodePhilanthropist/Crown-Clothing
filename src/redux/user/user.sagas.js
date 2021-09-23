@@ -22,7 +22,7 @@ export function* signInWithGoogle() {
 }
 
 export function* signInWithEmail(){
-    
+
 }
 
 export function* onGoogleSignInStart() {
@@ -30,7 +30,7 @@ export function* onGoogleSignInStart() {
 }
 
 export function* onEmailSignIn(){
-    yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, )
+    yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, signInWithEmail)
 }
 
 export function* userSagas() {
