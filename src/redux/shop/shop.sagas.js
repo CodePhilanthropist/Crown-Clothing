@@ -9,7 +9,7 @@ import {
 
 import {
   fetchCollectionsSuccess,
-  fetchCollectionFailure,
+  fetchCollectionsFailure,
 } from "./shop.actions";
 
 export function* fetchCollectionsAsync() {
