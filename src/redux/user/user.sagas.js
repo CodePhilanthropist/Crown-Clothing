@@ -1,6 +1,6 @@
 import { takeLatest, put, all, call } from "redux-saga/effects";
 import UserActionTypes from "./user.types";
-import { googleSignInSuccess, googleSignInFailure } from "./user.actions";
+import { googleSignInSuccess, googleSignInFailure, emailSignInFailure } from "./user.actions";
 
 import {
   auth,
@@ -25,7 +25,7 @@ export function* signInWithEmail({payload: {email, password}}){
     try{
 
     }catch(error){
-        
+        put(emailSignInFailure(error))
     }
 }
 
