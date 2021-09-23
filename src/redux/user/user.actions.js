@@ -15,7 +15,7 @@ export const signInSuccess = (user) => ({
 });
 
 export const signInFailure = (error) => ({
-  type: UserActionTypes.GOOGLE_SIGN_IN_FAILURE,
+  type: UserActionTypes.SIGN_IN_FAILURE,
   payload: error,
 });
 
