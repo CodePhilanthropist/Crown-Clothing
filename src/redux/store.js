@@ -18,3 +18,4 @@ if (process.env.NODE_ENV === "development") {
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 sagaMiddleware.run(fetchCollectionsStart, rootSaga);
 export const persistor = persistStore(store);
+export default {store, persistor};
