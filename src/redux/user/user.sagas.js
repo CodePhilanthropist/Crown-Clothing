@@ -45,7 +45,7 @@ export function* onEmailSignIn() {
 }
 
 export function* onCheckUserSession(){
-  yield takeLatest()
+  yield takeLatest(UserActionTypes.CHECK_USER_SESSION)
 }
 
 export function* userSagas() {
