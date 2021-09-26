@@ -52,7 +52,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => ({
-  
+  checkUserSession: () => dispatch(checkUserSession())
 })
 
 export default connect(mapStateToProps)(App);
