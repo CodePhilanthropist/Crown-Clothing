@@ -20,6 +20,7 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
+    const {checkUserSession} = this.props;
   }
 
   componentWillUnmount() {
