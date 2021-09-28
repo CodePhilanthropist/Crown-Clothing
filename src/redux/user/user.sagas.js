@@ -76,7 +76,7 @@ export function* onCheckUserSession() {
 }
 
 export function* onSignOutStart() {
-  yield takeLatest(UserActionTypes.SIGN_OUT_START);
+  yield takeLatest(UserActionTypes.SIGN_OUT_START, signOut);
 }
 
 export function* userSagas() {
