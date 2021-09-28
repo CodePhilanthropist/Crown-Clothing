@@ -40,6 +40,9 @@ export function* signInWithEmail({ payload: { email, password } }) {
 export function* inUserAuthenticated(){
   try{
     const userAuth = yield getCurrentUser();
+    if (!userAuth){
+      
+    }
   }catch(error){
     yield put(signInFailure(error))
   }
