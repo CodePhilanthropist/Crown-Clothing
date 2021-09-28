@@ -38,6 +38,8 @@ export function* signInWithEmail({ payload: { email, password } }) {
 
 export function* inUserAuthenticated(){
   try{
+
+  }catch(error){
     
   }
 }
