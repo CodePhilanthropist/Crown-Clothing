@@ -40,7 +40,7 @@ export function* inUserAuthenticated(){
   try{
 
   }catch(error){
-    
+    yield put(signInFailure(error))
   }
 }
 
