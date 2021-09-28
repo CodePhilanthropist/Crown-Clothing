@@ -37,7 +37,7 @@ export function* signInWithEmail({ payload: { email, password } }) {
   }
 }
 
-export function* inUserAuthenticated(){
+export function* isUserAuthenticated(){
   try{
     const userAuth = yield getCurrentUser();
     if (!userAuth){
@@ -62,5 +62,5 @@ export function* onCheckUserSession() {
 }
 
 export function* userSagas() {
-  yield all([call(onGoogleSignInStart), call(onEmailSignIn)]);
+  yield all([call(onGoogleSignInStart), call(onEmailSignIn), call(isUserAuthenticated)]);
 }
