@@ -1,6 +1,6 @@
 import { takeLatest, put, all, call } from "redux-saga/effects";
 import UserActionTypes from "./user.types";
-import { signInSuccess, signInFailure } from "./user.actions";
+import { signInSuccess, signInFailure, signOutSuccess } from "./user.actions";
 
 import {
   auth,
@@ -52,6 +52,7 @@ export function* isUserAuthenticated() {
 export function* signOut() {
   try {
     yield auth.signOut();
+    yield (put(signOutSuccess))
   } catch (error) {}
 }
 
