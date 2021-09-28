@@ -51,6 +51,8 @@ export function* isUserAuthenticated() {
 
 export function* signOut(){
   try{
+
+  }catch(error){
     
   }
 }
