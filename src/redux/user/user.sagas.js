@@ -41,7 +41,7 @@ export function* inUserAuthenticated(){
   try{
     const userAuth = yield getCurrentUser();
     if (!userAuth){
-      
+      return;
     }
   }catch(error){
     yield put(signInFailure(error))
