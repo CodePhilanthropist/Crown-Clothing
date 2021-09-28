@@ -37,15 +37,15 @@ export function* signInWithEmail({ payload: { email, password } }) {
   }
 }
 
-export function* isUserAuthenticated(){
-  try{
+export function* isUserAuthenticated() {
+  try {
     const userAuth = yield getCurrentUser();
-    if (!userAuth){
+    if (!userAuth) {
       return;
     }
-    yield getSnapshotFromUserAuth(userAuth)
-  }catch(error){
-    yield put(signInFailure(error))
+    yield getSnapshotFromUserAuth(userAuth);
+  } catch (error) {
+    yield put(signInFailure(error));
   }
 }
 
@@ -62,5 +62,9 @@ export function* onCheckUserSession() {
 }
 
 export function* userSagas() {
-  yield all([call(onGoogleSignInStart), call(onEmailSignIn), call(isUserAuthenticated)]);
+  yield all([
+    call(onGoogleSignInStart),
+    call(onEmailSignIn),
+    call(isUserAuthenticated),
+  ]);
 }
