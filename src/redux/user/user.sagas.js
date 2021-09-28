@@ -58,7 +58,9 @@ export function* signOut() {
   try {
     yield auth.signOut();
     yield put(signOutSuccess());
-  } catch (error) {}
+  } catch (error) {
+    yield put(signOutFailure(error))
+  }
 }
 
 export function* onGoogleSignInStart() {
