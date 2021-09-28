@@ -50,7 +50,9 @@ export function* isUserAuthenticated() {
 }
 
 export function* signOut(){
-  
+  try{
+    
+  }
 }
 
 export function* onGoogleSignInStart() {
