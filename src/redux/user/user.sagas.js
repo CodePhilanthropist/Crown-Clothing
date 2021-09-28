@@ -43,6 +43,7 @@ export function* inUserAuthenticated(){
     if (!userAuth){
       return;
     }
+    yield getSnapshotFromUserAuth(userAuth)
   }catch(error){
     yield put(signInFailure(error))
   }
