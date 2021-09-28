@@ -19,6 +19,10 @@ const userReducer = (state = INITIAL_STATE, action) => {
         ...state,
         error: action.payload,
       };
+    case UserActionTypes.SIGN_OUT_SUCCESS:
+      return {
+        
+      }
     case UserActionTypes.GOOGLE_SIGN_IN_FAILURE:
     case UserActionTypes.EMAIL_SIGN_IN_FAILURE:
       return {
