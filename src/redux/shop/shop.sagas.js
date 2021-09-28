@@ -33,3 +33,8 @@ export function* fetchCollectionsStart() {
     fetchCollectionsAsync
   );
 }
+
+
+export function* shopSagas(){
+  
+}
