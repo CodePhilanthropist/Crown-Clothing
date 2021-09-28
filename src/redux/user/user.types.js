@@ -6,6 +6,7 @@ const UserActionTypes = {
   SIGN_IN_FAILURE: "SIGN_IN_FAILURE",
   CHECK_USER_SESSION: "CHECK_USER_SESSION",
   SIGN_OUT_START: "SIGN_OUT_START",
+  SIGN_OUT_SUCCESS: "SIGN_OUT_SUCCESS",
 };
 
 export default UserActionTypes;
