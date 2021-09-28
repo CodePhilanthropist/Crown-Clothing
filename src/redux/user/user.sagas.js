@@ -51,9 +51,9 @@ export function* isUserAuthenticated() {
 
 export function* signOut(){
   try{
-
+    yield auth.signOut()
   }catch(error){
-    
+
   }
 }
 
