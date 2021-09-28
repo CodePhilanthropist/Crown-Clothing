@@ -6,6 +6,7 @@ import {
   auth,
   googleProvider,
   createUserProfileDocument,
+  getCurrentUser,
 } from "../../firebase/firebase.utils";
 
 export function* getSnapshotFromUserAuth(userAuth) {
@@ -38,7 +39,7 @@ export function* signInWithEmail({ payload: { email, password } }) {
 
 export function* inUserAuthenticated(){
   try{
-
+    const userAuth = yield getCurrentUser();
   }catch(error){
     yield put(signInFailure(error))
   }
