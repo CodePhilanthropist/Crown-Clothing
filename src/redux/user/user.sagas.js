@@ -37,7 +37,9 @@ export function* signInWithEmail({ payload: { email, password } }) {
 }
 
 export function* inUserAuthenticated(){
-  
+  try{
+    
+  }
 }
 
 export function* onGoogleSignInStart() {
