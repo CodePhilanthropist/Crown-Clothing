@@ -43,4 +43,8 @@ const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden,
 });
 
+const mapDispatchToProps = dispatch => ({
+
+})
+
 export default connect(mapStateToProps)(Header);
