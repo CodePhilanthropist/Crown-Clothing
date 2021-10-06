@@ -17,7 +17,7 @@ const config = {
 
   measurementId: "G-S557FRBB39",
 };
-//this is a signed component
+
 firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
